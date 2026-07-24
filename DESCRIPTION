@@ -1,0 +1,22 @@
+Package: corrStability
+Title: Zero-Imputation and Correlation Stability of Metabolite Variants
+Version: 0.0.0.9000
+Authors@R:
+    person("Prashant", "Bhandari", email = "you@example.com",
+           role = c("aut", "cre"))
+Description: Tools for wide-format metabolomics tables. Wraps a
+    sample-by-metabolite data frame in a validated 'metabolite_set' object,
+    imputes zeros, adds log-transformed variants, and computes pairwise
+    correlations among all variants with summary statistics.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = FALSE)
+Imports:
+    stats,
+    utils
+Suggests:
+    testthat (>= 3.0.0),
+    data.table,
+    optparse
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
