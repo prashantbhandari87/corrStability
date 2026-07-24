@@ -1,0 +1,14 @@
+
+data <- fread("data/test.csv", data.table = FALSE)
+
+# Strategy A — name your metadata columns, everything else numeric is a metabolite
+ms <- metabolite_set(data, id_cols = c("sample"))
+
+# Strategy B — metabolites share a prefix/pattern
+ms <- metabolite_set(data, pattern = "^met")
+
+res <- run_metabolite_analysis(ms)          # optional: seed = 123
+
+res$summary        # mean/median/min/max/sd per correlation type
+res$correlations   # one row per metabolite, one column per variant pair
+res$transformed    # the metabolite_set with fixed_/random_/log_ columns added
