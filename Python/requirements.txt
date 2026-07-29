@@ -1,0 +1,4 @@
+# tidypolars caps at Python <3.12 — use a 3.10 or 3.11 interpreter
+tidypolars==0.3.2
+polars>=1.0
+numpy>=1.16
