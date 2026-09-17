@@ -14,7 +14,7 @@ metabolites whose signal depends on how their zeros were handled.
 ## The idea, as pseudocode
 
 ```
-GOAL: measure how sensitive each metabolite is to the zero-filling method.
+GOAL: measure how sensitive each metabolite is to the imputation approach.
 
 for each metabolite column m:
 
